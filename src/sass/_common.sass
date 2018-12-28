@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic')
+
+html,body 
+	font-size: 16px
+	font-family: 'PT Sans', sans-serif
+
+img 
+	max-width: 100%
+
+a
+	text-decoration: none
+	position: relative
+	&:after
+		content: ' '
+		width: 0
+		position: absolute
+		bottom: -0.063rem
+		left: 0
+		height: 1px
+		background-color: #ffffff
+		+tr(all ease 0.3s)
+	&:hover
+		text-decoration: none
+		&:after
+			width: 100%
