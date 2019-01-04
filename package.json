@@ -16,6 +16,7 @@
   },
   "authors": "Coderiver <html@coderiver.com.ua>",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.3",
     "autoprefixer": "^8.3.0",
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.2.3",

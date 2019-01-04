@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic')
 
+$xs: 576
+$sm: 768
+$md: 992
+$lg: 1200
+$xl: 1320
+
+$green: #2d9c44
+
 html,body 
-	font-size: 16px
+	font-size: 15px
 	font-family: 'PT Sans', sans-serif
+	+rmin($sm)
+		font-size: 16px
 
 img 
 	max-width: 100%
 
-a
+.header a
 	text-decoration: none
 	position: relative
 	&:after
@@ -23,3 +33,14 @@ a
 		text-decoration: none
 		&:after
 			width: 100%
+
+// general
+img 
+	max-width: 100%
+
+.title
+	font-weight: 700
+	text-transform: uppercase
+	margin-bottom: 2rem
+	&--white
+		color: #ffffff

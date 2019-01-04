@@ -15,12 +15,19 @@
       <section class="header">
         <div class="container">
           <div class="row align-items-stretch">
-            <div class="col-md-2">
+            <div class="col-5 col-lg-2">
               <a href="" class="header__logo">
                 <img src="img/logo.jpg" alt="" />
               </a>
             </div>
-            <div class="col-md-10">
+            <div class="col-7 justify-content-end d-flex align-items-center d-lg-none">
+              <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="col-md-10 d-none d-lg-block">
               <div class="row header__top-line">
                 <p class="col-md-3 header__sublogo">ПрикамАгро - ведущая строительная компания</p>
                 <div class="col-md-4 ml-auto text-right header__contact">
@@ -33,24 +40,318 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-11">
+                <div class="col-md-12">
                   <div class="navigation">
                     <ul class="navigation__list">
                       <li class="navigation__item"><a href="" class="navigation__link">Главная</a></li>
-                      <li class="navigation__item"><a href="" class="navigation__link">Каталог оборудования</a></li>
+                      <li class="navigation__item"><a href="" class="navigation__link">Каталог оборудования</a>
+                        <div class="navigation__submenu submenu">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <a href="" class="submenu__title">Молочное оборудование</a>
+                              <ul class="submenu__list">
+                                <li class="submenu__item"><a href="" class="submenu__link">Молокопровод линейный (на 100 и 20 голов)</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Летний лагерь для КРС (летняя дойка)</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Доильный зал Ёлочка</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Доильный зал "Карусель"</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Доильный зал «Европараллель»</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Индивидуальная доильная установка</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <a href="" class="submenu__title">Молочное оборудование</a>
+                              <ul class="submenu__list">
+                                <li class="submenu__item"><a href="" class="submenu__link">Молокопровод линейный (на 100 и 20 голов)</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Летний лагерь для КРС (летняя дойка)</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Доильный зал Ёлочка</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Доильный зал "Карусель"</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Доильный зал «Европараллель»</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Индивидуальная доильная установка</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
                       <li class="navigation__item"><a href="" class="navigation__link">Строительство</a></li>
                       <li class="navigation__item"><a href="" class="navigation__link">Реконструкция</a></li>
                       <li class="navigation__item"><a href="" class="navigation__link">Наши работы</a></li>
                       <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
                     </ul>
+                    <form class="navigation__search search">
+                      <div class="search__group">
+                        <input type="text" name="" id="" class="search__input" placeholder="Поиск">
+                        <button type="submit" class="search__submit">
+                          <i class="fas fa-search fa-2x"></i>
+                        </button>
+                      </div>
+                      <div class="search__close js-search-panel">
+                        <i class="fas fa-times fa-2x"></i>
+                        <i class="fas fa-search fa-2x"></i>
+                      </div>
+                    </form>
                   </div>
                 </div>
-                <div class="col-1">
+                <div class="col-12">
+                  <div class="header__delemiter"></div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-slide">
+        <div class="main-slide__img active" style="background-image: url(/img/slider.jpg)" data-img="1"></div>
+        <div class="main-slide__img" style="background-image: url(/img/slider2.JPG)" data-img="2"></div>
+        <div class="main-slide__img" style="background-image: url(/img/slider3.jpg)" data-img="3"></div>
+        <div class="container">
+          <div class="main-slide__list-old">
+            <div class="row">
+              <div class="col-12">
+                <div class="main-slide__list">
+                  <div class="main-slide__item">
+                    <div class="main-slide__number">01.</div>
+                    <a href="" class="main-slide__link active" data-slide="1">Строительство</a>
+                  </div>
+                  <div class="main-slide__item">
+                    <div class="main-slide__number">02.</div>
+                    <a href="" class="main-slide__link" data-slide="2">Реконструкция</a>
+                  </div>
+                  <div class="main-slide__item">
+                    <div class="main-slide__number">03.</div>
+                    <a href="" class="main-slide__link" data-slide="3">Оборудование</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-slide__descr">
+            <div class="row">
+              <div class="col-md-5">
+                <p>Компания «ПрикамАгро» - это ведущая компания в сфере разработки, производства, внедрения и сопровождения современных решений по оснащению объектов молочного животноводства.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product mb-5 mt-5">
+        <div class="container">
+          <div class="row">
             <div class="col-12">
-              <div class="header__delemiter"></div>
+              <h2 class="title">Деятельность компании</h2>
+            </div>
+            <div class="col-12 col-sm-6 mb-4">
+              <a href="" class="product__item">
+                <img src="img/product-item1.jpg" alt="" />
+                <div class="product__overlay">
+                  <div class="product__title">Строительство ферм крс</div>
+                  <ul class="product__nav">
+                    <li data-fakehref="/test/1/test">Молокопровод линейный</li>
+                    <li data-fakehref="#test">Летний лагерь для КРС</li>
+                    <li data-fakehref="#test">Доильный зал Ёлочка</li>
+                    <li data-fakehref="#test">Доильный зал "Карусель"</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 mb-4">
+              <a href="" class="product__item">
+                <img src="img/product-item2.jpg" alt="" />
+                <div class="product__overlay">
+                  <div class="product__title">Реконструкция ферм крс</div>
+                  <ul class="product__nav">
+                    <li data-fakehref="/test/1/test">Молокопровод линейный</li>
+                    <li data-fakehref="#test">Летний лагерь для КРС</li>
+                    <li data-fakehref="#test">Доильный зал Ёлочка</li>
+                    <li data-fakehref="#test">Доильный зал "Карусель"</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 mb-4">
+              <a href="" class="product__item">
+                <img src="img/product-item3.jpg" alt="" />
+                <div class="product__overlay">
+                  <div class="product__title">Стойловое оборудование</div>
+                  <ul class="product__nav">
+                    <li data-fakehref="/test/1/test">Молокопровод линейный</li>
+                    <li data-fakehref="#test">Летний лагерь для КРС</li>
+                    <li data-fakehref="#test">Доильный зал Ёлочка</li>
+                    <li data-fakehref="#test">Доильный зал "Карусель"</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 mb-4">
+              <a href="" class="product__item">
+                <img src="img/product-item4.jpg" alt="" />
+                <div class="product__overlay">
+                  <div class="product__title">Доильное оборудование</div>
+                  <ul class="product__nav">
+                    <li data-fakehref="/test/1/test">Молокопровод линейный</li>
+                    <li data-fakehref="#test">Летний лагерь для КРС</li>
+                    <li data-fakehref="#test">Доильный зал Ёлочка</li>
+                    <li data-fakehref="#test">Доильный зал "Карусель"</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 mb-4">
+              <a href="" class="product__item">
+                <img src="img/product-item5.jpg" alt="" />
+                <div class="product__overlay">
+                  <div class="product__title">Навозоудаление</div>
+                  <ul class="product__nav">
+                    <li data-fakehref="/test/1/test">Молокопровод линейный</li>
+                    <li data-fakehref="#test">Летний лагерь для КРС</li>
+                    <li data-fakehref="#test">Доильный зал Ёлочка</li>
+                    <li data-fakehref="#test">Доильный зал "Карусель"</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 mb-4">
+              <a href="" class="product__item">
+                <img src="img/product-item6.jpg" alt="" />
+                <div class="product__overlay">
+                  <div class="product__title">Вентиляция</div>
+                  <ul class="product__nav">
+                    <li data-fakehref="/test/1/test">Молокопровод линейный</li>
+                    <li data-fakehref="#test">Летний лагерь для КРС</li>
+                    <li data-fakehref="#test">Доильный зал Ёлочка</li>
+                    <li data-fakehref="#test">Доильный зал "Карусель"</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="callback mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="callback__lay">
+                <div class="row">
+                  <div class="col-12">
+                    <h4 class="title title--white text-center">Получить консультацию и спецпредложение от ПрикамАгро</h4>
+                  </div>
+                  <div class="col-10 offset-1 col-md-8 offset-md-2">
+                    <form action="" class="row">
+                      <div class="col-md-6 mb-2">
+                        <div class="form-group">
+                          <input type="text" name="" id="1" class="form-control" placeholder="Ваше имя">
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-2">
+                        <div class="form-group">
+                          <input type="text" name="" id="2" class="form-control" placeholder="Ваш телефон">
+                        </div>
+                      </div>
+                      <div class="col-12 mb-2">
+                        <div class="form-group">
+                          <textarea name="" id="3" cols="30" rows="5" class="form-control" placeholder="Ваш вопрос"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-10 offset-md-1">
+                        <div class="form-check form-group">
+                          <input class="form-check-input" type="checkbox" value="" id="ch">
+                          <label class="form-check-label" for="ch"> Настоящим я подтверждаю достоверность введенных мною сведений и даю согласие на обработку моих персональных данных в соответствие c Политикой Конфиденциальности и Пользовательским соглашением </label>
+                        </div>
+                      </div>
+                      <div class="col-12 text-center">
+                        <div class="form-group">
+                          <input type="button" value="Отправить" class="btn btn-success callback__btn">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer d-none d-md-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-lg-3 d-none d-sm-block">
+              <div class="footer__logo">
+                <img src="img/logo-footer.png" alt="">
+                <p>ПрикамАгро - ведущая строительная компания</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <a href="" class="footer__title">Доильное оборудование</a>
+              <ul class="footer__nav">
+                <li><a href="">Молокопровод линейный (на 100 и 200 голов)</a></li>
+                <li><a href="">Летний лагерь для КРС (летняя дойка)</a></li>
+                <li><a href="">Доильный зал Ёлочка</a></li>
+                <li><a href="">Доильный зал "Карусель"</a></li>
+                <li><a href="">Доильный зал «Европараллель»</a></li>
+                <li><a href="">Индивидуальная доильная установка</a></li>
+              </ul>
+              <a href="" class="footer__title">Стойловое оборудование и системы поения</a>
+              <ul class="footer__nav">
+                <li><a href="">Привязное стойловое оборудование c уровневой системой автопоения</a></li>
+                <li><a href="">Беспривязное стойловое оборудование</a></li>
+                <li><a href="">Групповые поилки</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <a href="" class="footer__title">Охлаждение и переработка молока</a>
+              <ul class="footer__nav">
+                <li><a href="">Закрытого типа танк-охладитель</a></li>
+                <li><a href="">Открытого типа танк-охладитель</a></li>
+                <li><a href="">Пастеризатор стационарный</a></li>
+              </ul>
+              <a href="" class="footer__title">Навозоудаление</a>
+              <ul class="footer__nav">
+                <li><a href="">Транспортер скребковый ТСН</a></li>
+                <li><a href="">Фекальные насосы НЖН и НЦИ</a></li>
+                <li><a href="">Дельта скреперные установки</a></li>
+              </ul>
+              <a href="" class="footer__title">Оборудование для телят</a>
+              <ul class="footer__nav">
+                <li><a href="">Молочное такси для телят</a></li>
+                <li><a href="">Домики для телят</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <a href="" class="footer__title">Дополнительное оборудование для ферм</a>
+              <ul class="footer__nav">
+                <li><a href="">Весы для животных (электронные и механические)</a></li>
+                <li><a href="">Станок для копыт</a></li>
+                <li><a href="">Маты резиновые (коврики)</a></li>
+                <li><a href="">Кормодробильный агрегат АКР, КДМ-5</a></li>
+                <li><a href="">Крематоры для животных</a></li>
+                <li><a href="">Автомобильные весы</a></li>
+              </ul>
+              <a href="" class="footer__title">Выполненые работы</a>
+              <a href="" class="footer__title">Контакты</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="d-flex justify-content-between justify-content-lg-end align-items-center">
+                <div class="copyright__phone">
+                  <a href=""><span>+7 (3412)</span> 77-77-77</a>
+                  <a href=""><span>+7 (965)</span> 845-53-83</a>
+                </div>
+                <div class="copyright__adress ">
+                  <p class="d-none d-md-block">г.Ижевск, ул. Максима Горького 46</p>
+                  <p>info@prikamagro.ru</p>
+                </div>
+                <div class="copyright__bank d-none d-md-block">
+                  <a href=""><img src="img/sbrf.png" alt=""></a>
+                </div>
+                <div class="copyright__bank d-none d-lg-block">
+                  <a href=""><img src="img/rsb.jpg" alt=""></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -59,6 +360,7 @@
     <!-- END content -->
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="js/app.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
     <!-- END scripts -->
   </body>
 </html>

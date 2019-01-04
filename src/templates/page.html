@@ -7,4 +7,43 @@ title: Главная страница
 	
 	{% include 'partials/_header.html' %}
 
+	{% include 'partials/_main-slide.html' %}
+
+	<section class="product mb-5 mt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="title">Деятельность компании</h2>
+				</div>
+				{% for item in [
+					{id:1,'title':'Строительство ферм крс'},
+					{id:2,'title':'Реконструкция ферм крс'},
+					{id:3,'title':'Стойловое оборудование'},
+					{id:4,'title':'Доильное оборудование'},
+					{id:5,'title':'Навозоудаление'},
+					{id:6,'title':'Вентиляция'}
+				] %}
+				<div class="col-12 col-sm-6 mb-4">
+					<a href="" class="product__item">
+						<img src="img/product-item{{item.id}}.jpg" alt="" />
+						<div class="product__overlay">
+							<div class="product__title">{{item.title}}</div>
+							<ul class="product__nav">
+								<li data-fakehref="/test/1/test">Молокопровод линейный</li>
+								<li data-fakehref="#test">Летний лагерь для КРС</li>
+								<li data-fakehref="#test">Доильный зал Ёлочка</li>
+								<li data-fakehref="#test">Доильный зал "Карусель"</li>
+							</ul>
+						</div>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+
+	{% include 'partials/_callback.html' %}
+
+	{% include 'partials/_footer.html' %}
+
 {% endblock %}
