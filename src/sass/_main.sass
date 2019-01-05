@@ -245,12 +245,15 @@
 	background-size: cover
 	display: flex
 	align-items: flex-end
-	padding-left: 0
-	padding-right: 0
-	padding-bottom: 2rem
-	padding-top: 8rem
+	padding-left: 0 !important
+	padding-right: 0 !important
+	padding-bottom: 2rem !important
+	padding-top: 7rem !important
 	+rmin($sm)
-		min-height: 70vh
+		padding-top: 12rem !important
+		min-height: 50vh
+	&--mb 
+		margin-bottom: 4rem !important
 	&__title
 		font-size: 2.5rem
 		color: #ffffff
@@ -271,7 +274,7 @@
 		margin-top: 2rem
 		margin-bottom: -3rem
 		+rmin($sm)
-			margin-bottom: -7rem
+			margin-bottom: -4rem
 			margin-left: 0
 			margin-right: 0
 	&__list
@@ -285,8 +288,11 @@
 			text-transform: uppercase
 			color: #333333
 			margin-right: 2rem
+			+tr(all ease 0.3s)
 			&:last-child
 				margin-right: 0
+			&:hover
+				color: $green
 
 
 
@@ -334,7 +340,9 @@
 			&:after
 				bottom: 0
 	&__item--notransition:hover &__title
-		transform: translateY(-2rem)
+		transform: translateY(-1rem)
+		&:after
+			display: none
 
 
 

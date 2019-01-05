@@ -1,5 +1,5 @@
 ---
-title: Главная страница
+title: Каталог
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -7,7 +7,38 @@ title: Главная страница
 	
 	{% include 'partials/_header.html' %}
 
-	{% include 'partials/_jumbotron.html' %}
+	<section class="jumbotron" style="background-image: url(../img/jumbotron.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                            <li class="breadcrumb-item"><a href="#">Каталог</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Молочное оборудование</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-12">
+                    <div class="jumbotron__title">Молочное оборудование</div>
+                    <div class="jumbotron__descr">
+                        В зависимости от выбранной Вами технологии содержании скота, стойловое оборудование которое мы 
+                        производим всегда отличается высоким качеством и при его использовании не происходит 
+                        травмирование скота.
+                    </div>
+                </div>
+                {# <div class="col-12">
+                    <div class="jumbotron__subnav">
+                        <div class="jumbotron__list">
+                            <a href="">Описание</a>
+                            <a href="">Галерея</a>
+                            <a href="">Консультация</a>
+                        </div>
+                    </div>
+                </div> #}
+            </div>
+        </div>
+    </section>
 
 	<section class="product mb-5 mt-5">
 		<div class="container">
