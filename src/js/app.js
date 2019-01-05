@@ -2,6 +2,7 @@ import $ from 'jquery';
 import 'popper.js';
 import 'bootstrap';
 import '@fortawesome/fontawesome-free';
+import 'owl.carousel2';
 
 var app = {
   'config': {
@@ -23,6 +24,15 @@ var app = {
 ((window, document, $, app) => {
 
   var $doc = $(document);
+
+  /**
+   * Start carousel
+   */
+  app.carousel = {
+    init: (el, conf) => {
+      $(el).owlCarousel(conf);
+    },
+  };
 
   /**
    * Search panel open and close
@@ -111,6 +121,15 @@ var app = {
      * Init 
      */
     app.fakeHref.init();
+    /**
+     * Init carousel main page
+     */
+    app.carousel.init('.project-slider', {
+      dots: false,
+      nav: true,
+      items: 1,
+      navText: ['<svg><use xlink: href = "img/sprite.svg#icon-back"></use></svg>', '<svg><use xlink: href = "img/sprite.svg#icon-back"></use></svg>'],
+    });
   });
 
 

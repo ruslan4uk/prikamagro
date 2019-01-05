@@ -1,0 +1,40 @@
+---
+title: Главная страница
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include 'partials/_header.html' %}
+
+	{% include 'partials/_jumbotron.html' %}
+
+	<section class="product mb-5 mt-5">
+		<div class="container">
+			<div class="row">
+				{% for item in [
+					{id:1,'title':'Молокопровод линейный (на 100 и 200 голов)'},
+					{id:2,'title':'Летний лагерь для КРС (летняя дойка)'},
+					{id:3,'title':'Доильный зал Ёлочка'},
+					{id:4,'title':'Доильный зал "Карусель"'},
+					{id:5,'title':'Доильный зал «Европараллель»'},
+					{id:6,'title':'Индивидуальная доильная установка'}
+				] %}
+				<div class="col-12 col-sm-6 mb-4">
+					<a href="" class="product__item product__item--notransition">
+						<img src="img/product-item{{item.id}}.jpg" alt="" />
+						<div class="product__overlay">
+							<div class="product__title">{{item.title}}</div>
+						</div>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+
+	{% include 'partials/_callback.html' %}
+
+	{% include 'partials/_footer.html' %}
+
+{% endblock %}

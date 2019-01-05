@@ -238,6 +238,66 @@
 			text-shadow: 1px 2px 4px rgba(0,0,0,1)
 
 
+// jumbotron
+.jumbotron
+	min-height: 80vh
+	background-position: center center
+	background-size: cover
+	display: flex
+	align-items: flex-end
+	padding-left: 0
+	padding-right: 0
+	padding-bottom: 2rem
+	padding-top: 8rem
+	+rmin($sm)
+		min-height: 70vh
+	&__title
+		font-size: 2.5rem
+		color: #ffffff
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 1rem
+		+rmin($md)
+			font-size: 3rem
+	&__descr
+		color: #eeeeee
+		max-width: 50rem
+	&__subnav
+		background-color: #ffffff
+		box-shadow: 0 0 3px 5px rgba(0,0,0,.05)
+		padding: 1.25rem 2rem
+		margin-left: -2rem
+		margin-right: -2rem
+		margin-top: 2rem
+		margin-bottom: -3rem
+		+rmin($sm)
+			margin-bottom: -7rem
+			margin-left: 0
+			margin-right: 0
+	&__list
+		overflow-x: scroll
+		display: flex
+		+rmin($sm)
+			overflow-x: visible
+		& a 
+			font-size: 1rem
+			font-weight: 700
+			text-transform: uppercase
+			color: #333333
+			margin-right: 2rem
+			&:last-child
+				margin-right: 0
+
+
+
+//breadcrumbs
+.breadcrumb
+	background: none
+	padding: 0
+	& li, & a
+		color: #cccccc
+
+
 
 // product
 .product
@@ -245,17 +305,39 @@
 		position: relative
 		overflow: hidden
 		display: block
-	&__item:hover &__title
+	&__item:not(&__item--notransition):hover &__title
 		+rmin($md)
 			transform: translateY(-2rem)
 			&:after
 				transform: translateY(-1.5rem)
-	&__item:hover &__nav
+	&__item:not(&__item--notransition):hover &__nav
 		+rmin($md)
 			transform: translateY(0)
-	&__item:hover &__overlay:after
+	&__item:not(&__item--notransition):hover &__overlay:after
 		+rmin($md)
 			transform: translateY(-100%)
+
+	// catalog item
+	&__item--notransition &__title
+		transform: translateY(0)
+		font-size: 1.25rem
+		+rmin($md)
+			font-size: 1.375rem
+		// &:after
+		// 	transform: translateY(0)
+		// 	bottom: -1rem
+	&__item--notransition &__overlay
+		&:after
+			bottom: -20%
+			height: 50%
+	&__item--notransition:hover &__overlay
+			&:after
+				bottom: 0
+	&__item--notransition:hover &__title
+		transform: translateY(-2rem)
+
+
+
 	&__overlay
 		position: absolute
 		top: 0
@@ -333,6 +415,69 @@
 		text-transform: uppercase
 		padding-left: 2rem
 		padding-right: 2rem
+
+// project
+.project
+	&__lay
+		background-color: #fff
+		padding: 1rem 1rem 0 1rem
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__left
+		width: 100%
+		margin-bottom: 1rem
+		+rmin($md)
+			width: 40%
+	&__right
+		width: 100%
+		margin-bottom: 1rem
+		+rmin($md)
+			width: calc(100% - 40% - 2rem)
+
+// project-slider
+.project-slider
+	&__item
+		position: relative
+	&__overlay
+		position: absolute
+		height: 100%
+		width: 100%
+		top: 0
+		left: 0
+		display: flex
+		flex-wrap: wrap
+		align-content: flex-end
+		align-items: flex-end
+		padding: 1rem
+		border-bottom: 3px solid $green
+		&:before
+			position: absolute
+			bottom: 3px
+			left: 0
+			width: 100%
+			height: 50%
+			content: ' '
+			background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(22,6,4,0.8) 100%)
+			background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(22,6,4,0.8) 100%)
+			background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(22,6,4,0.8) 100%)
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#160604',GradientType=0 )
+	&__title
+		font-size: 1.125rem
+		text-transform: uppercase
+		color: #ffffff
+		font-weight: 700
+		margin-bottom: 0.5rem
+		position: relative
+		z-index: 2
+	&__descr
+		color: #eeeeee
+		position: relative
+		z-index: 2
+
+
+
+
 
 
 
