@@ -1,0 +1,64 @@
+---
+title: Каталог
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include 'partials/_header.html' %}
+
+	<section class="jumbotron jumbotron--mb" style="background-image: url(img/jumbotron.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Выполненные объекты</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-12">
+                    <div class="jumbotron__title">Выполненные объекты</div>
+                    <div class="jumbotron__descr">
+                        В зависимости от выбранной Вами технологии содержании скота, стойловое оборудование которое мы 
+                        производим всегда отличается высоким качеством и при его использовании не происходит 
+                        травмирование скота.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="jumbotron__subnav">
+                        <div class="jumbotron__list">
+                            <a href="">2016г.</a>
+                            <a href="">2017г.</a>
+                            <a href="">2018г.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<section class="portfolio mb-4 mt-5">
+		<div class="container">
+			<div class="row">
+                {% for i in [1,2,3,4,5] %}
+				<div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="portfolio__item">
+                        <a href="" class="portfolio__link">
+                            <img src="img/content.jpg" alt="">
+                            <div class="portfolio__title">Совхоз "Ленин"</div>
+                        </a>
+                        <div class="portfolio__date">октябрь 2018г.</div>
+                    </div>
+                </div>
+                {% endfor %}
+			</div>
+		</div>
+	</section>
+
+	{% include 'partials/_callback.html' %}
+
+	{% include 'partials/_footer.html' %}
+
+{% endblock %}
