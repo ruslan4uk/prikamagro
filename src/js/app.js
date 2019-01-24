@@ -1,6 +1,6 @@
-import $ from 'jquery';
-import 'popper.js';
-import 'bootstrap';
+//import $ from 'jquery';
+//import 'popper.js';
+//import 'bootstrap';
 import '@fortawesome/fontawesome-free';
 import 'owl.carousel2';
 import '@fancyapps/fancybox';
@@ -191,12 +191,12 @@ var app = {
       dots: false,
       nav: true,
       items: 1,
-      navText: ['<svg><use xlink: href = "img/sprite.svg#icon-back"></use></svg>', '<svg><use xlink: href = "img/sprite.svg#icon-back"></use></svg>'],
+      navText: ['<svg><use xlink: href = "assets/template/img/sprite.svg#icon-back"></use></svg>', '<svg><use xlink: href = "assets/template/img/sprite.svg#icon-back"></use></svg>'],
     });
     /**
      * Parallax init
      */
-    app.parallax.init('.jumbotron', '0.25');
+    app.parallax.init('.jumbotron', '0.1');
     /**
      * Burger init
      */
@@ -215,7 +215,7 @@ var app = {
  * Scroll to anchor
  */
 $(document).ready(function() {
-  $('a[href*=#]').on('click', function(e) {
+  $('a[href*="#"]').on('click', function(e) {
     var anchor = $(this);
     $('html, body').stop().animate({
       scrollTop: $(anchor.attr('href')).offset().top
@@ -224,3 +224,6 @@ $(document).ready(function() {
     return false;
   });
 });
+
+
+
